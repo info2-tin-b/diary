@@ -13,6 +13,11 @@ struct location {
 };
 
 int main() {
+    struct location loc[10] = { [2].point.x = 23 }; 
+    loc[0].point.x = 23;
+    loc[0].t = 23.42;
+
+
     int foo = 42; // scalaire de type entier signé (complément à deux)
     char *ptr = "toto"; // pointeur sur un entier (chaîne de caractères)
     long array[10]; // tableau de 10 éléments long
