@@ -1,0 +1,6 @@
+ID,Nom,Prénom,Age,Sexe,Mathématiques,Physique,Chimie,Anglais
+1,Dupont,Jean,20,M,14,12,15,13
+2,Martin,Claire,21,F,16,17,14,15
+3,Leblanc,Paul,22,M,10,9,11,12
+4,Roux,Sophie,20,F,18,16,17,19
+5,Moreau,Luc,23,M,12,11,13,10

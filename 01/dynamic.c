@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
     }
     for (int i = 0; i < size; i++) {
         printf("%d\n", data[i]);
-    }    
+    }
 
     free(data);
 }

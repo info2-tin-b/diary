@@ -1,0 +1,20 @@
+Añazco Torres        Cristopher     EN    EE     cristopher.anazcotorres@heig-vd.ch
+Badaracco            Giacomo        EAI   PT     giacomo.badaracco@heig-vd.ch
+Balan                Eduard-Adrian  EEM   PT     eduard-adrian.balan@heig-vd.ch
+Baysal               Volkan         EEM   PT     volkan.baysal@heig-vd.ch
+Ben Slimen           Hazem          EEM   PT     hazem.benslimen@heig-vd.ch
+Berthoud             Tom            EAI   PT     tom.berthoud@heig-vd.ch
+Damachi              Lami           EEM   PT     lami.damachi@heig-vd.ch
+Fuentes              Hadrien        EAI   PT     hadrien.fuentes@heig-vd.ch
+Hua                  Zhenyang       EN    EE     zhenyang.hua@heig-vd.ch
+Luisoni              Tom            EAI   PT     tom.luisoni@heig-vd.ch
+Majstorovic          Martin         EN    PT     martin.majstorovic@heig-vd.ch
+Marchand             Luc            EAI   PT     luc.marchand@heig-vd.ch
+Marques Chaves       João Manuel    EEM   PT     joao.marqueschaves@heig-vd.ch
+Osaje                Jordan         EEM   PT     jordan.osaje@heig-vd.ch
+Poologanathan        Prathipan      EN    EE     prathipan.poologanathan@heig-vd.ch
+Sieve                Alexandre      EN    PT     alexandre.sieve@heig-vd.ch
+Silva Portela        Rodrigo        EN    TP     rodrigo.silvaportela@heig-vd.ch
+Tenkeu Azegha        Franklin       EAI   PT     franklin.tenkeuazegha@heig-vd.ch
+Weber                Jason          EAI   PT     jason.weber@heig-vd.ch
+Yeddes               Mohamed Ahdi   EEM   PT     mohamed.yeddes@heig-vd.ch

@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <math.h>
+
 struct point {
-    double x;  
+    double x;
     double y;
 };
 
 double distance( struct point a, struct point b) {
     return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
-} 
+}
 
 int main() {
     struct point data[10] = {
