@@ -1,0 +1,14 @@
+<data data="2025">
+    <entry id="1">
+        <name>bob</name>
+        <age>23</age>
+        <born>neuchatel</born>
+        <fruit>banane</fruit>
+    </entry>
+    <entry id="2">
+        <name>alice</name>
+        <age>20</age>
+        <born>geneve</born>
+        <fruit>fraise</fruit>    
+    </entry>
+</data>

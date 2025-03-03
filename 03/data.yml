@@ -1,0 +1,9 @@
+data:
+  - name: bob
+    age: 23
+    born: neuchatel
+    fruit: banane
+  - name: alice
+    age: 20
+    born: geneve
+    fruit: fraise
