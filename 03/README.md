@@ -6,14 +6,19 @@
 - [x] Sous Windows, un chemin commence par lecteur (C:), sous Linux par un /
 - [x] Le `.` veut dire le chemin courant
 - [x] Le `..` veut dire le chemin parent
-- [ ] Un fichier peut être "texte" ou "binaire"
-- [ ] Les ordinateurs modernes utilisent le *little endian*
-- [ ] Un entier stocké dans un fichier commencera par son point faible
-- [ ] Les formarts "texte" sérialisé peuvent être XML, JSON, YAML, CSV...
+- [x] Un fichier peut être "texte" ou "binaire"
+- [x] Les ordinateurs modernes utilisent le *little endian*
+- [x] Un entier stocké dans un fichier commencera par son point faible
+- [x] Les formarts "texte" sérialisé peuvent être XML, JSON, YAML, CSV...
+
+## Chapitres du cours
+
+- [Fichiers](https://heig-tin-info.github.io/handbook/course-c/25-architecture-and-systems/files/?h=fic#fichiers)
+- [Système de fichier](https://heig-tin-info.github.io/handbook/tools/arch/filesystem/?h=fichier#organisation)
+- [Boutisme](https://heig-tin-info.github.io/handbook/course-c/15-fundations/datatype/?h=boutisme)
 
 ## Chemins de fichiers
 
-- [Système de fichier](https://heig-tin-info.github.io/handbook/tools/arch/filesystem/?h=fichier#organisation)
 
 Chemin absolu POSIX :
 
