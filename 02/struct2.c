@@ -18,3 +18,21 @@ Point point;
 
 Point foo;
 u64 bar = 23;
+
+
+typedef enum {
+    A, B, C
+} UnionType;
+
+typedef struct person {
+    char firstname[64];
+    char lastname[64];
+    int born_year;
+    float age;
+} Person;
+
+typedef struct couple {
+    Person a;
+    Person b;
+    UnionType type;
+} Couple;
