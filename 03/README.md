@@ -40,7 +40,7 @@ Chemins relatifs :
 .././../1/g/../g/4
 ```
 
-## Exercice
+## Exercice 1
 
 Créer un programme qui :
 
@@ -51,3 +51,35 @@ Créer un programme qui :
 - Déclarer une variable
 - Sauvegarder dans fichier
 - Explorer le fichier avec hexdump
+
+## Résumé de la dernière fois
+
+- Deux types de fichiers : texte et binaire
+- Un fichier text contient que des caractères ASCII / Unicode
+- La majorité des ordinateurs aujourd'hui sont en Little Endian
+- En Little Endian on stock les bytes de poids faible en premier
+
+```c
+char u[] = {0x01, 0x00, 0x00, 0x00};
+printf("%d", *(int*)&u);
+```
+
+## Exercice 2
+
+Écrire un programme qui effectue 256 itérations et calcul:
+
+s = sin(a) * sin(a)
+c = cos(a) * cos(a)
+
+La valeur de a va de 0 à 2*pi donc chaque itération incrémente l'angle de 
+2*pi/256
+
+Ouvrir un fichier et écrire dans ce fichier en ASCII la valeur de l'angle
+de s et de c avec 2 chiffres après la virgule.
+
+- fprintf(fp, "%.2f %.2f\n", s, c)
+
+## Exercice 3
+
+Faire un programme en C qui lit le fichier créé avec l'exercice 2
+Et afficher sur l'écran pour chaque ligne la somme de s + c 
