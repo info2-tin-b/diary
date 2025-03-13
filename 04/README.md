@@ -6,8 +6,8 @@
 
 ## Exercice sin/cos binaire
 
-Au lieu d'écrire les valeurs en ASCII, on va les écrire directement en double.
-Une entrée correspond donc à 3 doubles, soit 24 octets.
+Générer un fichier `data.bin` contenant l'angle, la valeur du sin^2 et du cos^2.
+en format binaire, chaque entrée représente un `float`. Les valeurs de l'angle vont de 0 à 2*pi et avec 256 valeurs.
 
 ## Midi
 
