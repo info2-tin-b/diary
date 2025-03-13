@@ -24,6 +24,9 @@
 Générer un fichier `data.bin` contenant l'angle, la valeur du sin^2 et du cos^2.
 en format binaire, chaque entrée représente un `float`. Les valeurs de l'angle vont de 0 à 2*pi et avec 256 valeurs.
 
+1. En brute
+2. Puis avec une structure
+
 ## Midi
 
 ```bash
