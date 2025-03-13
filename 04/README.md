@@ -1,7 +1,21 @@
 # Semaine 04/16
 
-- [ ] Les pointeurs
-- [ ] Finir exercice semaine passée
+- [x] Introduction aux pointeurs
+- [ ] Finir exercice sin/cos
+- [ ] Exercice sin/cos binaire
+
+## Exercice sin/cos binaire
+
+Au lieu d'écrire les valeurs en ASCII, on va les écrire directement en double.
+Une entrée correspond donc à 3 doubles, soit 24 octets.
+
+## Midi
+
+```bash
+sudo apt install midicsv fluidsynth
+midicsv gamme.mid
+fluidsynth -F gamme.wav -r 44100
+```
 
 ## Déclaration
 
