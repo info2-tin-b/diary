@@ -1,8 +1,23 @@
 # Semaine 04/16
 
 - [x] Introduction aux pointeurs
-- [ ] Finir exercice sin/cos
-- [ ] Exercice sin/cos binaire
+- [x] Finir exercice sin/cos
+- [x] Exercice sin/cos binaire
+- [ ] `fseek`
+
+## Théorie de Jeudi
+
+- Fonctions
+  - `fwrite(adresse-source, taille variable, nombre variable, fichier)`
+  - `fread(adresse-source, taille variable, nombre variable, fichier)`
+  - `ftell(fichier)` Retourne la position du curseur
+  - `fseek(fichier, offset, whence)` déplace le curseur dans un fichier 
+    - `SEEK_SET` Début du fichier, 
+    - `SEEK_CUR` Position courante du curseur, 
+    - `SEEK_END` Fin du fichier
+- Outils
+  - `hexdump -n100 -C fichier.txt` Affiche les 100 premiers bytes
+  - `head -n10` Affiche les 10 première lignes d'un fichier texte
 
 ## Exercice sin/cos binaire
 
