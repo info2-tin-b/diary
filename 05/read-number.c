@@ -6,7 +6,7 @@
  * Le programme peut faire la première ou la seconde action
  * selon le parametre FROM_STDIN
  */
-#ifndef FROM_STDIN
+#if !defined FROM_STDIN
 #define FROM_STDIN 0
 #endif 
 

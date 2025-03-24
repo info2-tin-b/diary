@@ -28,14 +28,30 @@ MAX(23, 42)
 1. Toujours protéger les macros avec des parenthèses
 2. Les macros sont du REMPLACEMENT DE CHAINES
 
+### Inclusion
+
+Cette directive intègre le contenu d'un fichier à la place de la directive. 
+
+- `"nom"` Inclusion locale
+- `<nom>` Inclusion globale (système)
+
+```c 
+#include <nom>
+#include "nom"
+```
+
+### Conditions
+
 ```c
-#include 
-#define
+#if 0
+n'importe quoi 
+#endif 
+
+```c
 #if
+#ifdef
+#ifndef
 #else
 #elif
 #endif
-#pragma
-# 
-## 
 ```
