@@ -1,0 +1,12 @@
+A	05/demo-include/main.c
+A	05/demo-include/prout/pi.h
+M	06/README.md
+A	06/dynamic-array-separate/dynamic-array.h
+A	06/dynamic-array-separate/dynamic_array.c
+A	06/dynamic-array-separate/main.c
+M	06/dynamic_array.c
+A	06/memory-leak.c
+A	06/separate/main.c
+A	06/separate/mean.h
+A	06/separate/std.h
+Your branch is up to date with 'origin/main'.
