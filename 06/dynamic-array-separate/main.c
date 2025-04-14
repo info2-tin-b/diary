@@ -1,11 +1,6 @@
 #include <stdio.h> 
 #include <stdint.h> 
 
-#include "dynamic-array.h"
-#include "dynamic-array.h"
-#include "dynamic-array.h"
-
-
 int main() {
     Array array;
     init(&array);

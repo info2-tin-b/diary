@@ -19,8 +19,8 @@ int main() {
         filesize(fp));
     fseek(fp, 0x36, SEEK_SET);
     for (int i = 0; i < 16; i++) {
-        int v = colors[i % (sizeof(colors) / sizeof(colors[0]))];
-        fwrite(&v, 3, 1, fp);
+        int *v = &colors[i % (sizeof(colors) / sizeof(colors[0]))];
+        fwrite(v, 3, 1, fp);
     }
     fclose(fp);
 }
