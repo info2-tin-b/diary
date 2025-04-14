@@ -7,14 +7,17 @@ struct node {
 
 typedef struct node Node;
 
+void display(Node *el) {
+    while(el) {
+        printf("%d\n", el->data);
+        el = el->next;
+    }
+}
+
 int main() {
     Node a = {.data = 42 };
     Node b = {.data = 23, .next = &a };
-    a.next = &b;
-
-    Node *el = &a;
-    for (int i = 0; i < 10; i++ ) {
-        printf("%d: %d\n", i, el->data);
-        el = el->next;
-    }
+    Node c = {.data = 15, .next = NULL};
+    Node *head = &a;
+    display(head);
 }
