@@ -9,15 +9,20 @@ typedef struct node Node;
 
 void display(Node *el) {
     while(el) {
-        printf("%d\n", el->data);
+        printf("%c\n", el->data);
         el = el->next;
     }
 }
 
 int main() {
-    Node a = {.data = 42 };
-    Node b = {.data = 23, .next = &a };
-    Node c = {.data = 15, .next = NULL};
+    // T0
+    Node a = {.data = 'a' };
+    Node b = {.data = 'b', .next = &a };
+    Node c = {.data = 'c', .next = NULL};
     Node *head = &a;
+
+    // T1 Insérer l'élément `d` au début de la liste
+    Node d = {.data = 'd'};
+    
     display(head);
 }
