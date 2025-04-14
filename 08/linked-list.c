@@ -14,15 +14,20 @@ void display(Node *el) {
     }
 }
 
+Node * push_back(Node* head, int value) {
+
+}
+
 int main() {
     // T0
-    Node a = {.data = 'a' };
-    Node b = {.data = 'b', .next = &a };
     Node c = {.data = 'c', .next = NULL};
+    Node b = {.data = 'b', .next = &c };
+    Node a = {.data = 'a', .next = &b };
     Node *head = &a;
 
     // T1 Insérer l'élément `d` au début de la liste
-    Node d = {.data = 'd'};
-    
+    Node d = {.data = 'd', .next = &a };
+    head = &d;
+
     display(head);
 }
