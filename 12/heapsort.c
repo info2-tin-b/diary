@@ -1,68 +1,73 @@
 #include <stdio.h>
+#include <math.h>
 
-// Fonction pour échanger deux éléments
-void echanger(int *a, int *b) {
+void printArray(int array[], int n) {
+    for (int i = 0; i < n; i++)
+        printf("%d ", array[i]);
+    printf("\n");
+}
+
+void printTreeRecursive(int array[], int n, int index, int level) {
+    if (index >= n) return;
+    printTreeRecursive(array, n, 2 * index + 2, level + 1);
+    for (int i = 0; i < level * 6; i++)
+        printf(" ");
+    printf("%d\n", array[index]);
+    printTreeRecursive(array, n, 2 * index + 1, level + 1);
+}
+
+void printTree(int array[], int n) {
+    printTreeRecursive(array, n, 0, 0);
+}
+
+void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-// Fonction pour maintenir la propriété de tas (heapify)
-void tasifier(int tableau[], int n, int i) {
-    int plusGrand = i;       // Initialise le plus grand comme racine
-    int gauche = 2 * i + 1;  // Fils gauche
-    int droite = 2 * i + 2;  // Fils droit
+void heapify(int array[], int n, int i, int N) {
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
 
-    // Si le fils gauche est plus grand que la racine
-    if (gauche < n && tableau[gauche] > tableau[plusGrand])
-        plusGrand = gauche;
+    if (left < n && array[left] > array[largest])
+        largest = left;
 
-    // Si le fils droit est plus grand que le plus grand jusqu'à présent
-    if (droite < n && tableau[droite] > tableau[plusGrand])
-        plusGrand = droite;
+    if (right < n && array[right] > array[largest])
+        largest = right;
 
-    // Si le plus grand n'est pas la racine
-    if (plusGrand != i) {
-        echanger(&tableau[i], &tableau[plusGrand]);
-
-        // Rappel récursif
-        tasifier(tableau, n, plusGrand);
+    if (largest != i) {
+        swap(&array[i], &array[largest]);
+        heapify(array, n, largest, N);
     }
+
+    if (N > 0)
+        printTree(array, N);
 }
 
-// Fonction principale de Heap Sort
-void heapSort(int tableau[], int n) {
-    // Construction du tas (réorganisation du tableau)
+void heapSort(int array[], int n) {
     for (int i = n / 2 - 1; i >= 0; i--)
-        tasifier(tableau, n, i);
+        heapify(array, n, i, 0);
 
-    // Extraction d'un à un les éléments du tas
     for (int i = n - 1; i >= 0; i--) {
-        // Déplace la racine (maximum actuel) à la fin
-        echanger(&tableau[0], &tableau[i]);
-
-        // Appelle tasifier sur le tas réduit
-        tasifier(tableau, i, 0);
+        swap(&array[0], &array[i]);
+        heapify(array, i, 0, n);
     }
 }
 
-// Fonction d'affichage du tableau
-void afficher(int tableau[], int n) {
-    for (int i = 0; i < n; ++i)
-        printf("%d ", tableau[i]);
-    printf("\n");
-}
-
-// Exemple d'utilisation
 int main() {
-    int tableau[] = {12, 11, 13, 5, 6, 7};
-    int n = sizeof(tableau) / sizeof(tableau[0]);
+    int array[] = {8,4,12,20,6,42,14,11,3,35,7,9,11,50,1};
+    int n = sizeof(array) / sizeof(array[0]);
 
-    printf("Tableau initial :\n");
-    afficher(tableau, n);
+    printf("Original array:\n");
+    printArray(array, n);
 
-    heapSort(tableau, n);
+    printf("\nTree representation:\n");
+    printTree(array, n);
 
-    printf("Tableau trié :\n");
-    afficher(tableau, n);
+    heapSort(array, n);
+
+    printf("\nSorted array:\n");
+    printArray(array, n);
 }
