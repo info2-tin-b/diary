@@ -24,3 +24,12 @@ $$O(n)$$
 Et si le tableau il est trié ?
 
 $$O(log n)$$
+
+## Exercice
+
+1. Définir une structure de données `Contact` contenant un nom (max 64 caractères) et un numéro de téléphone sous forme d'un entier non signé 32-bit.
+2. Insérer dans le *main* 10 contacts.
+3. Utiliser `qsort` pour trier les contacts par téléphone.
+4. Implémenter une fonction de recherche linéaire pour rechercher un contact par son numéro de téléphone.
+5. Implémenter une fonction de recherche dichotomique pour rechercher un contact par son numéro de téléphone.
+  

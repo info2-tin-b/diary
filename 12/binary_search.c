@@ -14,15 +14,12 @@ int _bsearch(char *haystack, int left, int right, char needle) {
     if (needle == haystack[mid]) return mid;
     if (needle > haystack[mid])
         return _bsearch(haystack, mid, right, needle);
-    if (needle < haystack[mid]) 
+    else
         return _bsearch(haystack, left, mid, needle);
-    return -1;
 }
 
 int binary_search(char* haystack, size_t size, char needle) {
-    int left = 0;
-    int right = size - 1;
-    return _bsearch(haystack, left, right, needle);
+    return _bsearch(haystack, 0, size - 1, needle);
 }
 
 int main() {
