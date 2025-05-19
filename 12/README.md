@@ -4,17 +4,9 @@
 - [x] Algorithmes de tri
   - [x] Bubble Sort (O(n²))
   - [x] [Heap Sort](https://heig-tin-info.github.io/handbook/course-c/40-algorithms/sorting/heap-sort) O(n log n)
-
-- [ ] Recherche linéaire et dichotomique
-  - [ ] Recherche linéaire O(n)
-  - [ ] Recherche dichotomique O(log n)
-  
-- [ ] Récursivité
-  - [ ] Factorielle
-  - [ ] Fibonacci
-  - [ ] Labyrinthe
-- [ ] Liste doublement chaînée
-
+- [x] Recherche linéaire et dichotomique
+  - [x] Recherche linéaire O(n)
+  - [x] Recherche dichotomique O(log n)
 
 ## Complexité algorithmique
 
