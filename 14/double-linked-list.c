@@ -28,7 +28,7 @@ int main() {
 
     // Parcourir la chaîne du début à la fin (en affichant les valeurs)
     Element *walker = list.head;
-    do (walker->next != NULL) {
+    while (walker->next != NULL) {
         printf("%d ", walker->value);
         walker = walker->next;
     }
